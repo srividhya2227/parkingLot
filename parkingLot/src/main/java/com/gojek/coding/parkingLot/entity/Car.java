@@ -66,6 +66,4 @@ public class Car
 	{
 		this.slotNbr = slotNbr;
 	}
-    
-    
 }
