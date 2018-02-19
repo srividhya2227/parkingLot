@@ -76,11 +76,12 @@ public class DetailRetriever
 		}
 		if(result.length() == 0)
 		{
-			System.out.println("Not Found.");
+			System.out.println("Not found");
 		}
 		else
 		{
-			result = result.deleteCharAt(result.length()-2);
+			result = result.deleteCharAt(result.length()-1);
+			result = result.deleteCharAt(result.length()-1);
 			System.out.println(result);
 		}
 	}
@@ -115,7 +116,7 @@ public class DetailRetriever
 		
 		if(flag == 0)
 		{
-			System.out.println("not Found.");
+			System.out.println("Not found");
 		}
 	}
 	
@@ -146,17 +147,18 @@ public class DetailRetriever
 		}
 		if(result.length() == 0)
 		{
-			System.out.println("Not Found.");
+			System.out.println("Not found");
 		}
 		else
 		{
-			result = result.deleteCharAt(result.length()-2);
+			result = result.deleteCharAt(result.length()-1);
+			result = result.deleteCharAt(result.length()-1);
 			System.out.println(result);
 		}
 	}
 	
 	/**
-	 * Empties the particulat slot in the parking area..
+	 * Empties the particular slot in the parking area..
 	 * 
      * @param parkingArea
      *            The parking area in which cars are parked.
@@ -173,6 +175,6 @@ public class DetailRetriever
 			return;
 		}
 		parkingArea.removeCar(slot-1);
-		System.out.println("Slot number " + input + " is free");
+		System.out.println("Slot number " + inputArray[1] + " is free");
 	}
 }
